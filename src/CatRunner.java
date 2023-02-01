@@ -16,5 +16,16 @@ public class CatRunner {
         System.out.println(replacedCat);
 
         cat4.setName("Patient Bob Meow");
+        System.out.println(cat4.getName());
+        System.out.println(cats);
+
+        for (int i = 0; i <= cats.size() - 1; i++) {
+            String catName = cats.get(i).getName();
+            cats.get(i).setName(catName.toUpperCase());
+        }
+        System.out.println(cats);
+
+        cats.add(new Cat("SAM"));
+        System.out.println(cats);
     }
 }
